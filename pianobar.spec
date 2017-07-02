@@ -9,6 +9,7 @@ Source0:        https://6xq.net/pianobar/%{name}-%{version}.tar.bz2
 
 BuildRequires:  gnutls-devel
 BuildRequires:  libao-devel
+BuildRequires:  libcurl-devel
 BuildRequires:  libmad-devel
 BuildRequires:  libgcrypt-devel
 BuildRequires:  json-c-devel
@@ -33,11 +34,9 @@ Features
 %prep
 %autosetup
 touch configure
-chmod +x configure
 
 
 %build
-%configure
 make %{?_smp_mflags} V=1
 
 
