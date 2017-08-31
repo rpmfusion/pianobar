@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2016.06.02
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -52,6 +52,9 @@ make %{?_smp_mflags} V=1
 
 
 %changelog
+* Thu Aug 31 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 2016.06.02-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
 * Wed May 24 2017 Richard Shaw <hobbes1069@gmail.com> - 2016.06.02-2
 - Use configure so linker flags are utilized.
 
