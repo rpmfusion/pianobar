@@ -1,11 +1,13 @@
+%global	        debug_package %{nil}
+
 Name:           pianobar
 Version:        2016.06.02
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
-URL:            http://6xq.net/pianobar/
-Source0:        https://6xq.net/pianobar/%{name}-%{version}.tar.bz2
+URL:            https://6xq.net/pianobar/
+Source0:        %url/%{name}-%{version}.tar.bz2
 
 BuildRequires:  gnutls-devel
 BuildRequires:  libao-devel
@@ -37,7 +39,7 @@ touch configure
 
 
 %build
-make %{?_smp_mflags} V=1
+%make_build V=1
 
 
 %install
@@ -52,6 +54,9 @@ make %{?_smp_mflags} V=1
 
 
 %changelog
+* Fri Sep 01 2017 Leigh Scott <leigh123linux@googlemail.com> - 2016.06.02-4
+- Disable debuginfo
+
 * Thu Aug 31 2017 RPM Fusion Release Engineering <kwizart@rpmfusion.org> - 2016.06.02-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
 
