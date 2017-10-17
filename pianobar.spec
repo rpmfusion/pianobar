@@ -1,8 +1,6 @@
-%global	        debug_package %{nil}
-
 Name:           pianobar
-Version:        2016.06.02
-Release:        4%{?dist}
+Version:        2017.08.30
+Release:        1%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -36,9 +34,10 @@ Features
 %prep
 %autosetup
 touch configure
-
+chmod a+x configure
 
 %build
+%configure
 %make_build V=1
 
 
@@ -54,6 +53,10 @@ touch configure
 
 
 %changelog
+* Tue Oct 17 2017 Leigh Scott <leigh123linux@googlemail.com> - 2017.08.30-1
+- Update to latest upstream release.
+- Fix debuginfo issue (actually call configure)
+
 * Fri Sep 01 2017 Leigh Scott <leigh123linux@googlemail.com> - 2016.06.02-4
 - Disable debuginfo
 
