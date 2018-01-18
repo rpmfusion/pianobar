@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2017.08.30
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -53,6 +53,9 @@ chmod a+x configure
 
 
 %changelog
+* Thu Jan 18 2018 Leigh Scott <leigh123linux@googlemail.com> - 2017.08.30-2
+- Rebuilt for ffmpeg-3.5 git
+
 * Tue Oct 17 2017 Leigh Scott <leigh123linux@googlemail.com> - 2017.08.30-1
 - Update to latest upstream release.
 - Fix debuginfo issue (actually call configure)
