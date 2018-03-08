@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2017.08.30
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -54,6 +54,9 @@ chmod a+x configure
 
 
 %changelog
+* Thu Mar 08 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 2017.08.30-4
+- Rebuilt for new ffmpeg snapshot
+
 * Thu Mar 01 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 2017.08.30-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
