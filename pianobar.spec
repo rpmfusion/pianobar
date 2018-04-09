@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2017.08.30
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -54,6 +54,9 @@ chmod a+x configure
 
 
 %changelog
+* Mon Apr 09 2018 Nicolas Chauvet <kwizart@gmail.com> - 2017.08.30-5
+- Rebuilt for libjson
+
 * Thu Mar 08 2018 RPM Fusion Release Engineering <leigh123linux@googlemail.com> - 2017.08.30-4
 - Rebuilt for new ffmpeg snapshot
 
