@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2017.08.30
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -54,6 +54,9 @@ chmod a+x configure
 
 
 %changelog
+* Mon Mar 04 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2017.08.30-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
+
 * Sun Aug 19 2018 Leigh Scott <leigh123linux@googlemail.com> - 2017.08.30-7
 - Rebuilt for Fedora 29 Mass Rebuild binutils issue
 
