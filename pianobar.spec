@@ -8,6 +8,7 @@ URL:            https://6xq.net/pianobar/
 Source0:        %url/%{name}-%{version}.tar.bz2
 Patch0:         ffmpeg35_buildfix.patch
 
+BuildRequires:  gcc
 BuildRequires:  gnutls-devel
 BuildRequires:  libao-devel
 BuildRequires:  libcurl-devel
