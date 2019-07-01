@@ -1,12 +1,11 @@
 Name:           pianobar
-Version:        2017.08.30
-Release:        8%{?dist}
+Version:        2019.02.14
+Release:        1%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
 URL:            https://6xq.net/pianobar/
 Source0:        %url/%{name}-%{version}.tar.bz2
-Patch0:         ffmpeg35_buildfix.patch
 
 BuildRequires:  gcc
 BuildRequires:  gnutls-devel
@@ -55,6 +54,9 @@ chmod a+x configure
 
 
 %changelog
+* Mon Jul 01 2019 Richard Shaw <hobbes1069@gmail.com> - 2019.02.14-1
+- Update to 2019.02.14.
+
 * Mon Mar 04 2019 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 2017.08.30-8
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
 
