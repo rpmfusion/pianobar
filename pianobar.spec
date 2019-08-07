@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2019.02.14
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -54,6 +54,9 @@ chmod a+x configure
 
 
 %changelog
+* Wed Aug 07 2019 Leigh Scott <leigh123linux@gmail.com> - 2019.02.14-2
+- Rebuild for new ffmpeg version
+
 * Mon Jul 01 2019 Richard Shaw <hobbes1069@gmail.com> - 2019.02.14-1
 - Update to 2019.02.14.
 
