@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2020.11.28
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -54,6 +54,9 @@ chmod a+x configure
 
 
 %changelog
+* Fri Nov 12 2021 Leigh Scott <leigh123linux@gmail.com> - 2020.11.28-2
+- Rebuilt for new ffmpeg snapshot
+
 * Sun Nov 07 2021 Richard Shaw <hobbes1069@gmail.com> - 2020.11.28-1
 - Update to 2020.11.28.
 
