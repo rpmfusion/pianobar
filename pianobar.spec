@@ -1,13 +1,11 @@
 Name:           pianobar
-Version:        2020.11.28
-Release:        3%{?dist}
+Version:        2022.04.01
+Release:        1%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
 URL:            https://6xq.net/pianobar/
 Source0:        %url/%{name}-%{version}.tar.bz2
-
-Patch0:         pianobar-ffmpeg5.patch
 
 BuildRequires:  gcc
 BuildRequires:  gnutls-devel
@@ -18,7 +16,8 @@ BuildRequires:  libgcrypt-devel
 BuildRequires:  json-c-devel
 BuildRequires:  faad2-devel
 BuildRequires:  ffmpeg-devel
-BuildRequires:  libmad-devel
+
+Requires:       ffmpeg-libs
 
 
 %description
@@ -36,11 +35,10 @@ Features
 
 %prep
 %autosetup -p1
-touch configure
-chmod a+x configure
+
 
 %build
-%configure
+%{set_build_flags}
 %make_build V=1
 
 
@@ -49,13 +47,16 @@ chmod a+x configure
 
 
 %files
-%doc ChangeLog README.md
+%doc ChangeLog README.rst
 %license COPYING
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
 
 
 %changelog
+* Sun Apr 17 2022 Leigh Scott <leigh123linux@gmail.com> - 2022.04.01-1
+- Update to 2022.04.01
+
 * Wed Feb 09 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2020.11.28-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
