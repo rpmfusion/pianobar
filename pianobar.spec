@@ -1,6 +1,6 @@
 Name:           pianobar
 Version:        2022.04.01
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Console-based client for Pandora
 
 License:        MIT
@@ -54,6 +54,9 @@ Features
 
 
 %changelog
+* Wed Aug 02 2023 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 2022.04.01-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_39_Mass_Rebuild
+
 * Wed Mar 01 2023 Leigh Scott <leigh123linux@gmail.com> - 2022.04.01-3
 - Rebuild for new ffmpeg
 
